@@ -31,3 +31,19 @@ let incrementTodaysCount(visites: int[]): int[] =
 
 let birdCount = [|3;5;0;7;4;1|];
 incrementTodaysCount(birdCount);
+
+// B: Les listes
+
+// tache 1: Définissez le binding newList qui contient une nouvelle liste vide.
+let mutable newList = [];
+
+// tache 2: Définissez la liaison existingList pour représenter cette liste.
+newList <- ["F#", "Clojure", "Haskell"];
+
+// tache 3: Implémentez la fonction addLanguage pour ajouter un nouveau langage au début de votre liste.
+let addLanguage(language: string, array: string list): string list = [language];
+addLanguage("TypeScript", ["JavaScript"; "CoffeeScript"]);
+
+// tache 4: Implémentez la fonction countLanguages pour compter le nombre de langues de votre liste.
+let countLanguages(languages: string list): int = languages.Length;
+countLanguages(["C#"; "Racket"; "Rust"; "Ruby"]); // Rust > all
